@@ -1,0 +1,9 @@
+.registrate-ref{
+    box-shadow: 0.6vh .6vh 0px 0  rgb(255, 255, 255);
+    transition: all 0.2s ease-in;
+}
+.registrate-ref:hover{
+    transform: translate(-.3vh, -.3vh);
+    
+    box-shadow: 0.9vh .9vh 0px 0 rgb(255, 255, 255);
+}

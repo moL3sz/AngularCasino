@@ -1,0 +1,8 @@
+<section class="flex flex-row h-[93vh] w-full bg-emerald-800 noisy">
+  <div class="games w-[30vh] h-full bg-emerald-900 p-3">
+    <app-games (selectedGameEvent)="setSelectedGame($event)"></app-games>
+  </div>
+  <app-game-provider [selectedGame]="selectedGame">
+
+  </app-game-provider>
+</section>

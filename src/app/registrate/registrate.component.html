@@ -1,0 +1,34 @@
+<section class="overflow-hidden h-[93vh]">
+	<div
+		class="login-content bg-green-900 h-full shadow-inner noisy flex items-center justify-center flex-col space-y-10">
+		<div class="w-fit p-10 flex flex-col space-y-4 justify-center items-center">
+			<div class="sub-title text-slate-50 text-3xl">Sign Up</div>
+			<div class="hr"></div>
+			<div class="form-controlled flex flex-col space-y-5 justify-start">
+				<input type="text" id="nickname" placeholder="Nickname" (change)="validateNickname($event)" />
+				<input type="text" id="email" placeholder="Email">
+
+				<input type="text" id="email-confirm" placeholder="Email confirm">
+				<input type="password" id="password" placeholder="Password">
+        <div class="row text-slate-50 w-[35vh]">
+          <input type="checkbox" name="" id="" >
+          <span class="pl-2">Agree with the terms of usage of the application </span>
+        </div>
+        <div class="row text-slate-50 w-[35vh]">
+          <input type="checkbox" name="" id="">
+          <span class="pl-2">Hello</span>
+        </div>
+
+				<div class="padding"></div>
+				<button
+        (click)="handleRegistrate()"
+					class=" w-full bg-emerald-500 py-2 rounded-sm text-slate-50 active:bg-emerald-700 login-button flex flex-row justify-around">
+					<img src="https://img.icons8.com/ios-filled/20/ffffff/chip--v2.png" />
+					<span>Registrate</span>
+					<img src="https://img.icons8.com/ios-filled/20/ffffff/chip--v2.png" />
+				</button>
+			</div>
+		</div>
+
+	</div>
+</section>

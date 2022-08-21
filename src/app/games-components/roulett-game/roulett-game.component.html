@@ -1,0 +1,19 @@
+<div class="roulett p-3 ">
+  <div class="sub-title w-fit mx-auto text-7xl ">Roulett</div>
+
+  <div class="game-container text-slate-50 mt-10">
+    <div class="seed-holder">
+      <span class="text-lg">Seed: </span><span> {{currentSeed}}</span>
+    </div>
+    <div class="roulett-numbers-holder  w-[80vh]  overflow-hidden mx-auto outline">
+      <div class="roulett-numbers-moving">
+        <div class="roulett-number--tile  inline-block" *ngFor="let number of roulettNumbers; let i = index"
+             [ngStyle]="{'background-color': i === 0 ? 'green' : i % 2 == 1 ? 'red' : 'black'}"
+        >
+          {{number}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

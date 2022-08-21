@@ -1,0 +1,20 @@
+.sub-title{
+  font-family: 'Casino', sans-serif;
+  color: #fffffff5;
+}
+.roulett-numbers-moving:hover {
+  transform: translateX(-290vh);
+}
+.roulett-numbers-moving{
+  transition:  all 1s ease;
+}
+.roulett-numbers-moving{
+  white-space: nowrap;
+}
+.roulett-number--tile{
+  width: 10vh;
+  height: 10vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

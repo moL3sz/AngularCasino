@@ -1,0 +1,50 @@
+<nav>
+  <div class="nav-content bg-green-700 w-full h-[7vh] flex flex-row items-center px-10 justify-around text-slate-50">
+    <div class="logo">
+      <a href="/">
+        <img
+          src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/40/000000/external-casino-casino-flaticons-lineal-color-flat-icons-3.png" />
+      </a>
+    </div>
+    <div class="title flex flex-col justify-center items-center">
+      <a href="/" class="text-xl font-semibold">
+        Angular Casino
+      </a>
+      <small>
+        <i>
+          Never give up hope!
+        </i>
+      </small>
+    </div>
+    <div class="actions flex flex-row justify-around space-x-10">
+      <div class="about-ref">
+        <a href="#about">
+          About
+        </a>
+      </div>
+      <div class="login-ref" *ngIf="!authService.isLoggedIn">
+        <a href="/login">
+          Login
+        </a>
+      </div>
+      <div class="login-ref" *ngIf="authService.isLoggedIn">
+        <a href="#">
+          Log out
+        </a>
+      </div>
+      <div class="registrate-ref bg-emerald-200 px-4 py-1 rounded-sm text-slate-800 hover:bg-emerald-300"
+        *ngIf="!authService.isLoggedIn">
+        <a href="/registrate">
+          Sign Up
+        </a>
+      </div>
+      <div class="profile-ref" *ngIf="authService.isLoggedIn">
+        <a href="/profile">
+          Profile
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+</nav>

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body { height: 100%; }
+@font-face {
+  font-family: Casino;
+  src: url("./assets/fonts/CasinoShadow.ttf") format("truetype");
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.hr {
+  border-bottom: 1px solid rgba(236, 236, 236, 0.226);
+  height: 2px;
+  width: 80%;
+}

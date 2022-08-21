@@ -1,0 +1,23 @@
+<section class="overflow-hidden h-[93vh]">
+	<div
+		class="login-content bg-green-900 h-full shadow-inner noisy flex items-center justify-center flex-col space-y-10">
+		<div class="w-fit p-10 flex flex-col space-y-4 justify-center items-center">
+			<div class="sub-title text-slate-50 text-3xl">Sign in</div>
+			<div class="hr"></div>
+      <div class="error-msg text-sm text-red-500" *ngIf="error === 0">Wrong email or password!</div>
+			<div class="form-controlled flex flex-col space-y-5">
+				<input type="text" id="email" placeholder="Email">
+				<input type="password" id="password" placeholder="Password">
+				<div class="padding"></div>
+				<button
+        (click)="handleLogin()"
+					class=" w-full bg-emerald-500 py-2 rounded-sm text-slate-50 active:bg-emerald-700 login-button flex flex-row justify-around">
+					<img src="https://img.icons8.com/ios-filled/20/ffffff/chip--v2.png" />
+					<span>Login</span>
+					<img src="https://img.icons8.com/ios-filled/20/ffffff/chip--v2.png" />
+				</button>
+			</div>
+		</div>
+
+	</div>
+</section>
